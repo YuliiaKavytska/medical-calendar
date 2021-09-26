@@ -1,11 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Layout } from 'antd'
+import React, { FC } from 'react'
+import './App.css'
+import AppRouter from './components/AppRouter'
+import Navbar from './components/Navbar'
 
-function App() {
-  return (
-      <div>asdf</div>
-  );
+export const App: FC = () => {
+  return <Layout>
+    <Navbar />
+    <Layout.Content>
+      <AppRouter />
+    </Layout.Content>
+  </Layout>
 }
 
-export default App;
+export default App

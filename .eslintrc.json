@@ -1,8 +1,7 @@
 {
     "env": {
         "browser": true,
-        "es2021": true,
-        "jest":true
+        "es2021": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -89,15 +88,14 @@
         "react/no-multi-comp": [
             0
         ],
-        "@typescript-eslint/indent": ["error", 2],
         "@typescript-eslint/no-unused-vars": "error",
-        "@typescript-eslint/no-explicit-any": "error"
+        "@typescript-eslint/no-explicit-any": "error",
+        "strict": [
+            "error",
+            "global"
+        ],
+        "react/destructuring-assignment": 2
     },
-    "strict": [
-        "error",
-        "global"
-    ],
-    "react/destructuring-assignment": 2,
     "settings": {
         "import/resolver": {
             "typescript": {}
